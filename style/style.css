@@ -267,6 +267,10 @@ a:hover {
     color: #fff;
 }
 
+.hero p a {
+    color: #fff;
+}
+
 /* bandeau sans image, plus léger, pour les pages de contenu */
 .hero.plain {
     min-height: 0;
@@ -788,4 +792,34 @@ a:hover {
 
 .sources ul {
     padding-left: 20px;
+}
+
+.glossary {
+    display: grid;
+    gap: 4px 24px;
+    margin: 0;
+}
+
+.glossary dt {
+    font-weight: bold;
+    color: var(--bleu-fonce);
+    scroll-margin-top: 96px;
+}
+
+.glossary dt:target {
+    color: var(--bleu);
+}
+
+.glossary dd {
+    margin: 0 0 12px;
+}
+
+@media (min-width: 768px) {
+    .glossary {
+        grid-template-columns: 260px 1fr;
+    }
+
+    .glossary dd {
+        margin: 0 0 16px;
+    }
 }
