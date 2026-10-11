@@ -52,10 +52,7 @@ sans serveur derrière.
 
 ## Équipe
 
-- ARAVENA BRAVO Damien (chef de projet)
-- JACOB Timothé
-- BENDRIS Naël
-- ROUBINET Paul
+ARAVENA BRAVO Damien (chef de projet), JACOB Timothé, BENDRIS Naël, ROUBINET Paul.
 
 ## Crédits
 
