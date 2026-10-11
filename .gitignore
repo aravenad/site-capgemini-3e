@@ -1,2 +1,25 @@
+# Documents du sujet (fournis par les profs, pas à publier)
 docs/
+
+# Fichiers système
 .DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Éditeurs / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dépendances et fichiers générés (si on ajoute des outils plus tard)
+node_modules/
+*.log
+.env
+
+# Fichiers sources des images (on ne garde que les .webp optimisés)
+*.psd
+*.ai
+*.eps
+*.xcf
