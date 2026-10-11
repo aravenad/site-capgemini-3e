@@ -3,19 +3,15 @@
 }
 
 @font-face {
-    font-family: "Torus Notched SemiBold";
-    src: local("Torus Notched SemiBold"),
-         url("/font/Torus Notched SemiBold.ttf") format("truetype"),
-         url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.eot?#iefix") format("embedded-opentype"),
-         url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.woff2") format("woff2"),
-         url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.woff") format("woff"),
-         url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.svg#Torus Notched SemiBold") format("svg");
+    font-family: "Torus Notched";
+    src: url("../font/torus-notched-semibold.woff2") format("woff2");
+    font-display: swap;
 }
 
 body {
     padding: 0;
     margin: 0;
-    font-family: "Torus Notched SemiBold", sans-serif;
+    font-family: "Torus Notched", system-ui, sans-serif;
     color: #333333;
 }
 
@@ -613,10 +609,6 @@ div form p {
 
 .top:active {
     transform: translateY(0px);
-}
-
-i {
-    font-size: 1.5em;
 }
 
 footer {
