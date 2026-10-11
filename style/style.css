@@ -571,6 +571,52 @@ a:hover {
     border: 0;
 }
 
+.form .label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* champ fichier : le bouton natif (« Browse… ») est caché et remplacé par un bouton en français */
+.file {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border: 1px dashed #9aa5b1;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.form .file input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.form .file label {
+    margin: 0;
+    padding: 6px 16px;
+}
+
+.file input:focus-visible + label {
+    outline: 3px solid var(--bleu-clair);
+    outline-offset: 3px;
+}
+
+.file-name {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    color: var(--texte-doux);
+}
+
+.form-note {
+    font-size: 0.9375rem;
+    color: var(--texte-doux);
+}
+
 /* ==========================================================================
    Pied de page
    ========================================================================== */
