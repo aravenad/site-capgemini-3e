@@ -271,6 +271,7 @@ a:hover {
     max-width: 40em;
     font-size: 1.125rem;
     color: #fff;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero p a {

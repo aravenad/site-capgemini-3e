@@ -52,5 +52,5 @@ sans serveur derrière.
 ## Crédits
 
 - Chiffres et informations : site officiel et rapports annuels de Capgemini (sources sur chaque page)
-- Images : banques d'images gratuites
+- Images : banques d'images gratuites, dont les bandeaux de L'entreprise, Métiers et Engagements par vectorjuice sur Freepik
 - Police : Torus Notched
