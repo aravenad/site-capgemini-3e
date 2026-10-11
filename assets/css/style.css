@@ -260,8 +260,19 @@ a:hover {
         display: inline-flex;
     }
 
+    /* le menu s'ouvre par-dessus la page, juste sous l'en-tête */
     .js #menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         display: none;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+        padding: 0 var(--gouttiere);
+        background: #fff;
+        border-bottom: 1px solid var(--bord);
+        box-shadow: 0 12px 24px rgba(11, 47, 78, 0.15);
     }
 
     .js .site-header.is-open #menu {

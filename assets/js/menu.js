@@ -11,6 +11,13 @@ bouton.addEventListener("click", () => {
   basculer(bouton.getAttribute("aria-expanded") !== "true");
 });
 
+// un clic en dehors de l'en-tête referme le menu
+document.addEventListener("click", (e) => {
+  if (header.classList.contains("is-open") && !header.contains(e.target)) {
+    basculer(false);
+  }
+});
+
 // la touche Échap referme le menu et redonne le focus au bouton
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && header.classList.contains("is-open")) {
