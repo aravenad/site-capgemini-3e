@@ -267,6 +267,20 @@ a:hover {
     color: #fff;
 }
 
+/* bandeau sans image, plus léger, pour les pages de contenu */
+.hero.plain {
+    min-height: 0;
+    background: linear-gradient(120deg, var(--bleu-fonce) 0%, var(--bleu) 100%);
+}
+
+.hero.plain::after {
+    content: none;
+}
+
+.hero.plain .inner {
+    padding: 56px var(--gouttiere) 40px;
+}
+
 /* ==========================================================================
    Sections, cartes et blocs
    ========================================================================== */
@@ -648,4 +662,84 @@ a:hover {
 .top .icon {
     width: 22px;
     height: 22px;
+}
+
+/* ==========================================================================
+   Chiffres clés, encadrés de vocabulaire, sources
+   ========================================================================== */
+
+.figures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.figures li {
+    text-align: center;
+}
+
+.figures strong {
+    display: block;
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+    line-height: 1.1;
+    color: var(--bleu);
+}
+
+.word {
+    margin: 16px 0 0;
+    padding: 16px 20px;
+    border-left: 4px solid var(--bleu-clair);
+    border-radius: 0 12px 12px 0;
+    background: rgba(18, 171, 219, 0.08);
+}
+
+.word::before {
+    content: "Le mot à retenir";
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--bleu);
+}
+
+.stack > * + * {
+    margin-top: 16px;
+}
+
+.timeline {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline li {
+    display: grid;
+    gap: 4px;
+}
+
+.timeline strong {
+    font-size: 1.25rem;
+    color: var(--bleu);
+}
+
+@media (min-width: 640px) {
+    .timeline li {
+        grid-template-columns: 80px 1fr;
+        gap: 16px;
+    }
+}
+
+.sources {
+    font-size: 0.9375rem;
+    color: var(--texte-doux);
+}
+
+.sources ul {
+    padding-left: 20px;
 }
