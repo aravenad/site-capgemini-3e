@@ -9,6 +9,8 @@
     <link rel="icon" href="assets/img/favicon.png">
     <link rel="preload" href="assets/fonts/torus-notched-semibold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="assets/js/menu.js" defer></script>
   </head>
 
   <body>
@@ -20,7 +22,11 @@
         <a class="site-logo" href="index.html">
           <img src="assets/img/logo.webp" alt="Capgemini, retour à l'accueil" width="180" height="40">
         </a>
-        <nav aria-label="Navigation principale">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          Menu
+        </button>
+        <nav id="menu" aria-label="Navigation principale">
           <ul class="nav">
             <li><a href="pages/entreprise.html">L'entreprise</a></li>
             <li><a href="pages/valeurs.html">Valeurs</a></li>

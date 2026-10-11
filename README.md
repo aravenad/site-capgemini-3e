@@ -32,6 +32,7 @@ puis d'aller sur http://localhost:8000.
 ├── pages/              les autres pages du site
 └── assets/
     ├── css/            la feuille de style
+    ├── js/             le petit script du menu sur mobile
     ├── fonts/          la police (Torus Notched)
     └── img/
         ├── bandeaux/       images en haut des pages
@@ -42,7 +43,7 @@ puis d'aller sur http://localhost:8000.
 ## Nos choix
 
 On a essayé de faire un site **sobre** comme demandé dans le sujet : images en WebP et
-redimensionnées, pas de framework, presque pas de JavaScript (juste pour le formulaire de contact)
+redimensionnées, pas de framework, presque pas de JavaScript (juste pour le menu sur mobile et le formulaire de contact)
 et aucun service externe. Résultat : chaque page pèse moins de 250 Ko.
 Le site s'adapte aussi aux téléphones, vu que c'est surtout là-dessus que les collégiens vont le regarder.
 
