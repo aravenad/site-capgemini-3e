@@ -50,6 +50,13 @@ Le site s'adapte aussi aux téléphones, vu que c'est surtout là-dessus que les
 Le formulaire de contact est une **démo** : il n'envoie rien, vu que c'est un site statique
 sans serveur derrière.
 
+## Équipe
+
+- ARAVENA BRAVO Damien (chef de projet)
+- JACOB Timothé
+- BENDRIS Naël
+- ROUBINET Paul
+
 ## Crédits
 
 - Chiffres et informations : site officiel et rapports annuels de Capgemini (sources sur chaque page)
