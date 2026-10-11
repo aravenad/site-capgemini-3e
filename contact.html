@@ -92,6 +92,10 @@
       <section class="section">
         <h2>Écris-nous</h2>
         <div class="card">
+          <div class="notice">
+            <p><strong>Formulaire de démonstration</strong></p>
+            <p>Il n'envoie rien. Pour une vraie demande, écris par courrier ou passe par <a href="https://1eleve1stage.education.gouv.fr/">1élève1stage</a>.</p>
+          </div>
           <form class="form" id="formulaire" method="post" enctype="multipart/form-data">
             <fieldset>
               <legend class="visually-hidden">Ton message</legend>
@@ -122,10 +126,7 @@
               <div>
                 <button class="btn" type="submit">Envoyer</button>
               </div>
-              <p class="form-note" id="form-statut" role="status">
-                Ce formulaire est une démonstration : il n'envoie rien. Pour une vraie demande, écris par courrier
-                ou passe par 1élève1stage.
-              </p>
+              <p class="form-status" id="form-statut" role="status"></p>
             </fieldset>
           </form>
         </div>
@@ -137,7 +138,7 @@
         });
         document.getElementById("formulaire").addEventListener("submit", function (e) {
           e.preventDefault();
-          document.getElementById("form-statut").textContent = "Merci ! Comme ce site est une démonstration, ton message n'a pas été envoyé.";
+          document.getElementById("form-statut").textContent = "Merci ! Ce formulaire étant une démonstration, ton message n'a pas été envoyé.";
         });
       </script>
 
@@ -147,7 +148,7 @@
       <div class="inner">
         <div>
           <h2>Explorer le site</h2>
-          <ul>
+          <ul class="footer-links">
             <li><a href="entreprise.html">L'entreprise</a></li>
             <li><a href="valeurs.html">Valeurs</a></li>
             <li><a href="services.html">Services</a></li>
@@ -174,11 +175,10 @@
           <p>Découvre comment faire ton stage d'observation de 3e dans une entreprise du numérique.</p>
           <p><a href="nous-rejoindre.html">Préparer mon stage</a></p>
         </div>
-        <p class="note">
-          Site réalisé par des étudiants en BUT Informatique dans le cadre de la SAE 1.05–1.06.
-          Ce n'est pas le site officiel de Capgemini : pour cela, rends-toi sur
-          <a href="https://www.capgemini.com/fr-fr/">capgemini.com</a>.
-        </p>
+        <div class="footer-bottom">
+          <p>Projet étudiant · BUT Informatique · SAE 1.05–1.06</p>
+          <p>Site non officiel · <a href="https://www.capgemini.com/fr-fr/">Site officiel de Capgemini</a></p>
+        </div>
       </div>
     </footer>
 
