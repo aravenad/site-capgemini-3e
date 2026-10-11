@@ -415,8 +415,23 @@ a:hover {
     color: #fff;
 }
 
-.actions {
+.actions,
+.spaced {
     margin-top: 24px;
+}
+
+p.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cards-small {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+}
+
+.cards-small .card {
+    padding: 16px 20px;
 }
 
 /* ==========================================================================
